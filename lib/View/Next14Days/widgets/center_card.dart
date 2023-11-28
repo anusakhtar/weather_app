@@ -41,7 +41,7 @@ class CenterCard extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(right: 30, top: 10),
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       ShaderMask(
                         shaderCallback: (Rect bounds) {
@@ -111,7 +111,7 @@ class CenterCard extends StatelessWidget {
                   ),
                 ),
                 Align(
-                  alignment: Alignment.topCenter,
+                  alignment: Alignment.centerRight,
                   child: ShaderMask(
                     shaderCallback: (Rect bounds) {
                       return LinearGradient(
@@ -138,12 +138,12 @@ class CenterCard extends StatelessWidget {
                   ),
                 ),
                 Positioned(
-                  top: 1,
-                  left: 30,
+                  top: 0,
+                  left: 2,
                   child: Obx(
                     () => Image.asset(
                       controller.getImage(controller.currentDay.value),
-                      height: 190,
+                      height: 160,
                     ),
                   ),
                 ),

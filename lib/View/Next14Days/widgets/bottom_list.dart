@@ -14,7 +14,7 @@ class BottomList extends StatelessWidget {
     return Positioned(
       bottom: 1,
       child: SizedBox(
-        height: size.height / 2,
+        height: size.height / 2.1,
         width: size.width,
         child: ListView.builder(
             itemCount: homeController.model.value!.days!.length,
@@ -75,7 +75,7 @@ class BottomList extends StatelessWidget {
                       ),
                       Image.asset(
                         controller.getImage(index),
-                        width: 70,
+                        width: 50,
                         height: 70,
                       )
                     ],

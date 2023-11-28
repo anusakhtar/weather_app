@@ -34,30 +34,30 @@ class Next14Days extends StatelessWidget {
                       CustomAppbarz(),
                       SizedBox(height: 20),
                       DaysList(),
-                      SizedBox(height: 20),
-                      Positioned(
-                          bottom: 1,
-                          child: Container(
-                            height: size.height / 1.9,
-                            width: size.width,
-                            decoration: BoxDecoration(
-                              color: Colors.white38,
-                              borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(100),
-                                topRight: Radius.circular(100),
-                              ),
-                            ),
-                          )),
-                      BottomList(),
-                      Hero(
-                        tag: 'Tag',
-                        child: Material(
-                          color: Colors.transparent,
-                          child: CenterCard(),
+                    ],
+                  ),
+                  Positioned(
+                    bottom: 1,
+                    child: Container(
+                      height: size.height / 1.9,
+                      width: size.width,
+                      decoration: BoxDecoration(
+                        color: Colors.white38,
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(100),
+                          topRight: Radius.circular(100),
                         ),
                       ),
-                    ],
-                  )
+                    ),
+                  ),
+                  BottomList(),
+                  Hero(
+                    tag: 'Tag',
+                    child: Material(
+                      color: Colors.transparent,
+                      child: CenterCard(),
+                    ),
+                  ),
                 ],
               ),
             ),

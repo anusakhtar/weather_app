@@ -26,23 +26,17 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: SingleChildScrollView(
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           child: SafeArea(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Column(
                 children: [
-                  const SizedBox(
-                    height: 20,
-                  ),
+                  const SizedBox(height: 20,),
                   const CustomAppBar(),
-                  const SizedBox(
-                    height: 20,
-                  ),
+                  const SizedBox(height: 20,),
                   Location(),
-                  const SizedBox(
-                    height: 20,
-                  ),
+                  const SizedBox(height: 20,),
                   Hero(
                     tag: "Tag",
                     child: Material(
@@ -51,9 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                   ContainerList(),
-                  const SizedBox(
-                    height: 4,
-                  ),
+                  const SizedBox(height: 4,),
                   GestureDetector(
                     onTap: ()=> Get.to(()=>Next14Days()),
                     child: const Padding(
